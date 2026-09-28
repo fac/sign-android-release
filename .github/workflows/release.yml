@@ -11,13 +11,13 @@ jobs:
     name: Test action
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@50fbc622fc4ef5163becd7fab6573eac35f8462e # v1.2.0
         name: Checkout code
 
       - name: Run tests
         run: npm run test
 
-      - uses: pCYSl5EDgo/cat@1.0.0
+      - uses: pCYSl5EDgo/cat@264f5b318158276af69bd0a2a9f1e613b2d03ebf # 1.0.0
         name: Cat for GitHub Actions
         id: get_key
         with:
@@ -47,7 +47,7 @@ jobs:
     name: Update action
 
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@50fbc622fc4ef5163becd7fab6573eac35f8462e # v1.2.0
         name: Checkout code
 
       - name: Update v1 Tag
